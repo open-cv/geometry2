@@ -140,7 +140,7 @@ public:
 
   /**@brief Multiply this quaternion by q on the right
    * @param q The other quaternion 
-   * Equivilant to this = this * q */
+   * Equivalent to this = this * q */
 	Quaternion& operator*=(const Quaternion& q)
 	{
 		setValue(m_floats[3] * q.x() + m_floats[0] * q.m_floats[3] + m_floats[1] * q.z() - m_floats[2] * q.y(),
@@ -184,7 +184,7 @@ public:
 	}
 
 
-  /**@brief Return an inversely scaled versionof this quaternion
+  /**@brief Return an inversely scaled version of this quaternion
    * @param s The inverse scale factor */
 	Quaternion operator/(const tf2Scalar& s) const
 	{
@@ -421,7 +421,7 @@ inverse(const Quaternion& q)
 	return q.inverse();
 }
 
-/**@brief Return the result of spherical linear interpolation betwen two quaternions 
+/**@brief Return the result of spherical linear interpolation between two quaternions 
  * @param q1 The first quaternion
  * @param q2 The second quaternion 
  * @param t The ration between q1 and q2.  t = 0 return q1, t=1 returns q2 

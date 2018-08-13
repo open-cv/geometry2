@@ -34,7 +34,7 @@ class Matrix3x3 {
 	Vector3 m_el[3];
 
 public:
-	/** @brief No initializaion constructor */
+	/** @brief No initialization constructor */
 	Matrix3x3 () {}
 
 	//		explicit Matrix3x3(const tf2Scalar *m) { setFromOpenGLSubMatrix(m); }

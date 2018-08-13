@@ -138,11 +138,11 @@ public:
 	}
 
   /**@brief Return the distance squared between the ends of this and another vector
-   * This is symantically treating the vector like a point */
+   * This is semantically treating the vector like a point */
 	TF2SIMD_FORCE_INLINE tf2Scalar distance2(const Vector3& v) const;
 
   /**@brief Return the distance between the ends of this and another vector
-   * This is symantically treating the vector like a point */
+   * This is semantically treating the vector like a point */
 	TF2SIMD_FORCE_INLINE tf2Scalar distance(const Vector3& v) const;
 
   /**@brief Normalize this vector 
@@ -349,7 +349,7 @@ public:
 
 };
 
-/**@brief Return the sum of two vectors (Point symantics)*/
+/**@brief Return the sum of two vectors (Point semantics)*/
 TF2SIMD_FORCE_INLINE Vector3 
 operator+(const Vector3& v1, const Vector3& v2) 
 {
@@ -477,7 +477,7 @@ TF2SIMD_FORCE_INLINE Vector3 Vector3::normalized() const
 
 TF2SIMD_FORCE_INLINE Vector3 Vector3::rotate( const Vector3& wAxis, const tf2Scalar angle ) const
 {
-	// wAxis must be a unit lenght vector
+	// wAxis must be a unit length vector
 
 	Vector3 o = wAxis * wAxis.dot( *this );
 	Vector3 x = *this - o;
